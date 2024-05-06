@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>City Builder</title>
+</head>
+<body>
+    <div class="top">
+        <div class="nav">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    
+                    <div class="col-3 first-part">
+                        <!-- <button id = "start" type="button" class="btn btn--primary btn-small">Start</button> -->
+                        <button id = "start" type="button" class="btn btn--primary btn-small">Start</button>
+                        <button id = "pause" type="button" class="btn btn--primary btn-small">Pause</button>
+                        <button id="income-expences" type="button" class="btn btn--primary btn-small" data-toggle="modal" data-target="#exampleModal">Income/Expences</button>
+                    </div>
+                    <div class="col-3 container second-part">
+                        <div class="row align-items-center">
+                            <div class="col-3">
+                                <h2 class = "mb-0">Speed</h2>
+                            </div>
+                            <div class="col">
+                                <button id = "speed_slow" type="button" class="btn btn--primary btn-small">Slow</button>
+                                <button id = "speed_normal" type="button" class="btn btn--primary btn-small">Normal</button>
+                                <button id = "speed_fast" type="button" class="btn btn--primary btn-small">Fast</button>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col container stats">
+                        <div class="row align-items-center">
+                            <div class="col-3 date align-items-center">
+                                <label id = "date" class = "mb-0">Date:</label> <label id = "sm" class = "mb-0"></label>
+                            </div>
+                            <div class="col-5 budget align-items-center">
+                                <label id = "money" class = "mb-0">Budget: $</label>
+                            </div>
+                            <div class=" satisfaction align-items-center">
+                                <label id = "satisfaction" class = "mb-0">Satisfaction:</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left">
+            <div id="controls" class="controlShadow mintcream z1 initialHidden rightedge open">
+                <div id="buttons-left-sidebar">  
+                    <p style="text-align: center; margin-bottom: 2px;">Zones</p>                
+                    <button id="residential-btn" class="sidebar-btn">
+                        <img id="sidebar-img" src="icons/icon_residential-zone.svg" alt="Residential zone" >
+                        <span style="display: inline-block; font-size: 11px; padding-top: 7px;">Residential <br>$100</span>
+                    </button>
+                    <button id="service-btn" class="sidebar-btn" >
+                        <img id="sidebar-img" src="icons/icon_service-zone.svg" alt="Service zone" >
+                        <span style="display: inline-block; font-size: 11px; padding-top: 7px;">Service <br>$100</span>
+                    </button>
+                    <button id="industrial-btn" class="sidebar-btn">
+                        <img id="sidebar-img" src="icons/icon_industrial-zone.svg" alt="Industrial zone" >
+                        <span style="display: inline-block; font-size: 11px; padding-top: 7px;">Industrial <br>$100</span>
+                    </button>
+                    <p style="text-align: center; margin-bottom: 2px;">Service </p> 
+                    <button id="police-station-btn" class="sidebar-btn">
+                        <img id = "sidebar-img" src="icons/icon_police-station.svg" alt="Police Station">
+                        <span style="display: inline-block; font-size: 11px; padding-top: 7px;">Police Dept<br>$500</span>
+                    </button>
+                    <button id="stadium-btn" class="sidebar-btn">
+                        <img id="sidebar-img" src="icons/icon_stadium.svg" alt="Stadium" >
+                        <span style="display: inline-block; font-size: 11px; padding-top: 7px;">Stadium <br>$5000</span>
+                    </button>
+                    <button id="fire-station-btn" class="sidebar-btn">
+                        <img id="sidebar-img" src="icons/icon_fire-station.svg" alt="Fire Dept" >
+                        <span style="display: inline-block; font-size: 11px; padding-top: 7px;">Fire Dept<br>$500</span>
+                    </button>
+                    <button id="school-btn" class="sidebar-btn">
+                        <img id="sidebar-img" src="icons/icon_school.png" alt="school" >
+                        <span style="display: inline-block; font-size: 11px; padding-top: 7px;">School<br>$200</span>
+                    </button>
+                    <button id="university-btn" class="sidebar-btn">
+                        <img id="sidebar-img" src="icons/icon_university.png" alt="University" >
+                        <span style="display: inline-block; font-size: 11px; padding-top: 7px;">University<br>$600</span>
+                    </button>
+                    <button id="road-btn" class="sidebar-btn">
+                        <img id="sidebar-img" src="icons/icon_road.svg" alt="Road" >
+                        <span style="display: inline-block; font-size: 11px; padding-top: 7px;">Road<br>$10</span>
+                    </button>
+                    <p style="text-align: center; margin-bottom: 2px;">Other</p>
+                    <button id="demolish-btn" class="sidebar-btn">
+                        <img id="sidebar-img" src="icons/icon_bulldozer.svg" alt="Bulldozer" >
+                        <span style="display: inline-block; font-size: 11px; padding-top: 10px;">Demolish</span>
+                    </button>
+                    <button id="disaster-btn" class="sidebar-btn">
+                        <img id="sidebar-img" src="icons/icon_disaster.svg" alt="Disaster" >
+                        <span style="display: inline-block; font-size: 11px; padding-top: 10px;">Disaster</span>
+                    </button>
+                </div>
+              </div>
+
+        </div>
+        <div class="right">
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content text-dark">
+                    <div class="modal-header">
+                    <h5 id="exampleModalLabel">Income & Expences</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- Modal 2 -->
+            <div class="modal fade" id="rightClickInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content text-dark">
+                    <div class="modal-header">
+                    <h5 id="exampleModalLabel">Info</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    Tax: <input type="number" class="form-control" id="tax">
+                        <div id="modalInfo">
+                            
+                        </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <table class="edit">
+            </table>
+        </div>
+        <div id="rect">
+        </div>
+    </div>
+
+    <!-- <button id="check">Checker</button> -->
+    <script type="module" src="index.js"></script>
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

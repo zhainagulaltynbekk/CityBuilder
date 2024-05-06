@@ -1,0 +1,311 @@
+body {
+    background-image: url("../temporary/icons/water3.jpg");
+    /* background-color:rgb(7, 18, 27); */
+    color: white;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+}
+
+#congrats {
+    font-size: 50px;
+}
+
+/* span, label {
+    font-size: x-large;
+} */
+
+#twoButtons {
+    margin-bottom: 20px;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+}
+
+/* div {
+    text-align: center;
+} */
+
+#timer {
+    color: white;
+    border-color: black;
+    font-size:xx-large;
+    background-color:brown;
+}
+
+table.edit {
+    margin-top: 90px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid black;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+td {
+    border-collapse: collapse;
+    width:20px;
+    height:20px;
+    background-size: 61px 61px;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+#satisfaction{
+    margin-left: -50px;
+}
+
+#date{
+    margin-left: -20px;
+}
+/* .container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+} */
+
+.left {
+    font-weight: 400;
+    width: 9.6%;
+    height: auto;
+    /* margin-left: -7px; */
+    float: left;
+    position: fixed;
+    text-align: center;
+    padding: 0.4% 0;
+}
+.top {
+    width: 1700px;
+    margin-top: -90px;
+    margin-left: -7px;
+    height: 55px;
+    position: fixed;
+    align-items: center;
+}
+.right {
+    width: 5300px;
+    height: 1500px;
+    margin-left: 175px;
+}
+#rect {
+    width: 120px;
+    position: absolute;
+    height: 120px;
+    pointer-events: none;
+    border: 3px solid yellow;
+}
+
+.sidebar-btn{
+    font-weight: 700;
+    text-align: center;
+    background-color: black;
+    height: auto;
+}
+
+#sidebar-img{
+    width: 35px; 
+    height: 35px; 
+    float: left;
+}
+
+#residential-btn{
+    background-color: rgb(150, 224, 128);
+}
+#residential-btn:hover{
+    color: rgb(150, 224, 128);
+    background-color: white;
+}
+
+
+#service-btn{
+    background-color: rgb(113, 187, 236);
+}
+#service-btn:hover{
+    color: rgb(113, 187, 236);
+    background-color: white;
+}
+
+
+#industrial-btn{
+    background-color: rgb(233, 238, 99);
+}
+#industrial-btn:hover{
+    color: rgb(167, 170, 84);
+    background-color: white;
+}
+
+#police-station-btn{
+    background-color: rgb(90, 139, 230);
+}
+#police-station-btn:hover{
+    color: rgb(90, 139, 230);
+    background-color: white;
+}
+
+#fire-station-btn{
+    background-color: rgb(238, 71, 65);
+}
+#fire-station-btn:hover{
+    color: rgb(238, 71, 65);
+    background-color: white;
+}
+
+#school-btn{
+    background-color: rgb(211, 192, 162);
+}
+#school-btn:hover{
+    color: rgb(211, 192, 162);
+    background-color: white;
+}
+
+#university-btn{
+    background-color: rgb(105, 226, 235);
+}
+#university-btn:hover{
+    color: rgb(105, 226, 235);
+    background-color: white;
+}
+
+#stadium-btn{
+    background-color: rgb(209, 91, 170);
+}
+#stadium-btn:hover{
+    color: rgb(209, 91, 170);
+    background-color: white;
+}
+
+#road-btn{
+    background-color: rgb(135, 145, 135);
+}
+#road-btn:hover{
+    color: rgb(135, 145, 135);
+    background-color: white;
+}
+
+#demolish-btn{
+    background-color: rgb(250, 124, 34);
+}
+#demolish-btn:hover{
+    color: rgb(250, 124, 34);
+    background-color: white;
+}
+
+#disaster-btn{
+    background-color: red;
+}
+#disaster-btn:hover{
+    color: red;
+    background-color: white;
+}
+
+.buttons-left-sidebar{
+    text-align: center;
+}
+
+.btn {
+	display: inline-block;
+	color: white;
+    font-size: 1em;
+	border: none;
+	transition: all 200ms ease-in;
+	cursor: pointer;
+    padding: 1% 2%;
+    width: auto;
+    height: auto;
+}
+.btn--primary {
+    background: #a881af;
+    color: white;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    /* padding: 12px 36px; */
+}
+.btn:hover {
+    background-color: #80669d;
+}
+
+.btn:active {
+    background: #7f8ff4;
+    box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
+}
+
+.first-part{
+    width: 100%;
+}
+
+.second-part h2{
+    font-size: large;
+    line-height: 1;
+}
+
+.nav{
+    /* background-color:goldenrod; */
+    padding: 10px 0;
+}
+
+.nav label{
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.pop{
+    width: 30%;
+    height: 100%;
+}
+
+
+.dropbtn {
+    background-color: #a881af;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 90px;
+}
+  
+.dropbtn:hover {
+    background-color: #80669d;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content, .dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #7e685a;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border: none;
+    width: 100%;
+}
+.dropdown-content button:hover {background-color: #c2b9b0;}
+
+.show {display:block;}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px grey;
+}
